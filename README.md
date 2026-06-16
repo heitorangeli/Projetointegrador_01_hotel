@@ -1,1 +1,3 @@
-# Projetointegrador_01_hotel
+# Projetointegrador 1
+
+Projeto integrador realizado nas aulas do SENAI, com a criação de um hotel.
