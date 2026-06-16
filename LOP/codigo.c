@@ -129,15 +129,15 @@ int main(){
 					printf("\nDigite o número do quarto que você quer cancelar a reserva, ou outro número inteiro que não seja um quarto válido para voltar para as opções iniciais\n");
 					scanf(" %d", & opcao2);
 					if(opcao2 > 0 && opcao2 < 31){
+						if (q[opcao2].situacao == 1){
 						q[opcao2].situacao = 0;
-						q[opcao2].ndehospedes = 0;
 						printf("O quarto %d foi esvaziado", opcao2);
 						algumquartoocupado -= 1;
-					}
-					}
-				else{
-					printf("Nenhum quarto ocupado\n");}
-			}}
+					}else{
+						printf("O quarto %d não está ocupado", opcao2);
+					}}}
+				else{printf("Nenhum quarto ocupado\n");}}
+				}
 		while(quartocorreto == 0){
 		printf("\nDigite o número do quarto que você deseja reservar\n");
 		scanf("%d", & qdesejado);
